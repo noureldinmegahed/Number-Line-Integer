@@ -1,0 +1,77 @@
+@font-face{
+    font-family: 'Quicksand';
+    src: url("../fonts/Quicksand-Regular.ttf")
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Quicksand';
+}
+body{
+    background-color: #fef7e9;
+}
+#part1{
+    width: 25%;
+    height: 710px;
+    display: inline-block;
+}
+#part2{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+
+}
+#part3{
+    width: 24%;
+    display: inline-block;
+}
+#container{
+    width: 743px !important;
+    height: 572px !important;
+    background-image: url("https://i.pinimg.com/originals/70/a4/16/70a41689bde6cff2c8ce3e98e8780181.png");
+    background-size: cover;
+    background-color: #333;
+    border-radius: 7px;
+    touch-action: none;
+}
+#numberLineIntegersimg{
+    height: 100%;
+    margin-left: 100px;
+    margin-top: 23px;
+}
+.shapes{
+    display: inline-block;
+    font-size: 40px;
+    padding-right: 10px;
+}
+#dataOfLocation{
+    border: black solid 2px;
+    border-radius: 10px;
+    margin: 12px 0px 20px 0px;
+    padding: 10px 0;
+    background-color: white;
+    width: 743px !important;
+}
+.things{
+    display: inline-block;
+    width: 120px;
+}
+  .things {
+    touch-action: none;
+    user-select: none;
+  }
+  /* .things:active {
+      
+  } */
+  .things:hover {
+    cursor: pointer;
+  }
+  #mark2{
+    display: block;
+    width: 65px;
+    position: relative;
+    left: 222px;
+    bottom: 555px;
+  }
