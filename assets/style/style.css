@@ -24,8 +24,8 @@ body{
 
 }
 #part3{
-    width: 24%;
-    display: inline-block;
+    width: 20%;
+    float: right;
 }
 #container{
     width: 743px !important;
@@ -50,13 +50,14 @@ body{
     border: black solid 2px;
     border-radius: 10px;
     margin: 12px 0px 20px 0px;
-    padding: 10px 0;
+    padding: 10px  0 10px 7px;
     background-color: white;
     width: 743px !important;
+    text-align: left;
 }
 .things{
     display: inline-block;
-    width: 120px;
+    width: 110px;
 }
   .things {
     touch-action: none;
@@ -71,10 +72,74 @@ body{
   #mark2{
     display: block;
     width: 65px;
-    position: relative;
+    position: absolute;
     left: 222px;
-    bottom: 555px;
+    bottom: 605px; 
+  }
+  #mark3{
+    display: block;
+    width: 65px;
+    position: absolute;
+    left: 222px;
+    top: 170px; 
+  }
+  #mark1{
+    display: block;
+    width: 65px;
+    position: absolute;
+    left: 222px;
+    top: 605px; 
   }
 #demo{
     display: none;
+}
+#yOfGirl{
+    width: 30px;
+    text-align: center;
+    position: absolute;
+    left: 188px;
+    bottom: 607px; 
+    color: red;
+}
+#yOfBird{
+    width: 30px;
+    text-align: center;
+    position: absolute;
+    left: 188px;
+    top: 170px; 
+    color: black;
+}
+#yOffish{
+    width: 30px;
+    text-align: center;
+    position: absolute;
+    left: 188px;
+    top: 607px; 
+    color: blue;
+}
+.numline,.numlines{
+    display: inline-block;
+}
+.numline{
+    display: block;
+    background-color: transparent;
+}
+.numlines{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+#numlines2{
+    position: relative;
+    bottom: 10px;
+}
+#numlines2,#numlines{
+    display: inline-block;
+}
+#item3{
+    position: absolute;
+    bottom: 50px;
+}
+#shape2{
+    text-align: left;
 }
