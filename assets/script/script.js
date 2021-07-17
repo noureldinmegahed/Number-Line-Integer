@@ -32,16 +32,13 @@
 
     function dragStart(a) {
       if(moved=false){
-        if(a.clientY>= "380"){
+        if(a.clientY>= "390"){
           document.getElementById("item1").src="assets/images/swimmingGirl.png"
-          document.getElementById("item1").style.width="150px"
           document.getElementById("yOfGirl").innerText=a.clientY;
         }else if( a.clientX <= "790"){
           document.getElementById("item1").src="assets/images/flightGirl.png"
-          document.getElementById("item1").style.width="120px"
         }else if(a.clientY<= "450"){
           document.getElementById("item1").src="assets/images/girl.png"
-          document.getElementById("item1").style.width="50px"
         }
       }
       if (a.type === "touchstart") {
@@ -77,9 +74,8 @@
         yOffset = currentY;
 
         setTranslate(currentX, currentY, dragItem1);
-        if(a.clientY>= "380"){
+        if(a.clientY>= "390"){
           document.getElementById("item1").src="assets/images/swimmingGirl.png"
-          document.getElementById("item1").style.width="150px"
           var coor = "X coords: " + x + ", Y coords: " + y;
       var x = (a.clientX/3.7795275591).toFixed(0);
       var y = (a.clientY/3.7795275591).toFixed(0);
@@ -97,7 +93,6 @@
         }else if( a.clientX <= "790"){
           document.getElementById("yOfGirl").innerText=parseFloat(a.clientY/3.7795275591).toFixed(0);
           document.getElementById("item1").src="assets/images/flightGirl.png"
-          document.getElementById("item1").style.width="120px"
           var coor = "X coords: " + x + ", Y coords: " + y;
       var x = (a.clientX/3.7795275591).toFixed(0);
       var y = (a.clientY/3.7795275591).toFixed(0);
@@ -117,7 +112,6 @@
           valued.style.position = "absolute";
           valued.style.top = a.clientY/1.05 +'px';
           document.getElementById("item1").src="assets/images/girl.png"
-          document.getElementById("item1").style.width="50px"
           var coor = "X coords: " + x + ", Y coords: " + y;
       var x = (a.clientX/3.7795275591).toFixed(0);
       var y = (a.clientY/3.7795275591).toFixed(0);
@@ -133,18 +127,15 @@
     
     function dragEnd(a) {
       if(moved = false){
-        if(a.clientY>= "380"){
+        if(a.clientY>= "390"){
           document.getElementById("item1").src="assets/images/swimmingGirl.png"
-          document.getElementById("item1").style.width="150px"
           document.getElementById("yOfGirl").innerText=a.clientY;
         }else if( a.clientX <= "790"){
           document.getElementById("item1").src="assets/images/flightGirl.png"
-          document.getElementById("item1").style.width="120px"
           document.getElementById("yOfGirl").innerText=a.clientY;
         }else if(a.clientY<= "450"){
   
           document.getElementById("item1").src="assets/images/girl.png"
-          document.getElementById("item1").style.width="50px"
           document.getElementById("yOfGirl").innerText=a.clientY;
         }
       }
@@ -206,7 +197,7 @@
 
     function dragStart2(e) {
       if(moved2=false){
-        if(e.clientY>= "380"){
+        if(e.clientY>= "390"){
           var valued2=document.getElementById("yOfBird");
           valued2.innerText=parseFloat(e.clientY/3.7795275591).toFixed(0);
           valued2.style.position = "absolute";
@@ -248,7 +239,7 @@
 
       if (active2) {
       
-        e.preventDefault();shape2
+        e.preventDefault();
       
         if (e.type === "touchmove") {
           currentX2 = e.touches[0].clientX - initialX2;
@@ -262,7 +253,7 @@
         yOffset2 = currentY2;
 
         setTranslate(currentX2, currentY2, dragItem2);
-        if(e.clientY>= "380"){
+        if(e.clientY>= "390"){
           document.getElementById("item2").src="assets/images/swimmingbird.png"
           var coor = "X coords: " + x + ", Y coords: " + y;
       var x = (e.clientX/3.7795275591).toFixed(0);
@@ -272,7 +263,7 @@
         drag2.clientX = e.clientX/3.7795275591;
         drag2.style.position = "absolute";
         drag2.style.top = e.clientY/1.05 +'px';
-        document.getElementById("shape2").innerText=("Y of draggable Element: "+parseFloat(e.clientY/3.7795275591).toFixed(0));
+        document.getElementById("shape2").innerText=("Y of Bird: "+parseFloat(e.clientY/3.7795275591).toFixed(0));
         var valued2=document.getElementById("yOfBird");
           valued2.innerText=parseFloat(e.clientY/3.7795275591).toFixed(0);
           valued2.style.position = "absolute";
@@ -280,7 +271,7 @@
         }else if( e.clientX <= "790"){
           
           document.getElementById("item2").src="assets/images/bird.png"
-          document.getElementById("shape2").innerText=("Y of draggable Element: "+parseFloat(e.clientY/3.7795275591).toFixed(0));
+          document.getElementById("shape2").innerText=("Y of Bird: "+parseFloat(e.clientY/3.7795275591).toFixed(0));
           var coor = "X coords: " + x + ", Y coords: " + y;
       var x = (e.clientX/3.7795275591).toFixed(0);
       var y = (e.clientY/3.7795275591).toFixed(0);
@@ -289,14 +280,13 @@
         drag2.clientX = e.clientX/3.7795275591;
         drag2.style.position = "absolute";
         drag2.style.top = e.clientY/1.05 +'px';
-        document.getElementById("shape2").innerText=("Y of draggable Element: "+parseFloat(e.clientY/3.7795275591).toFixed(0));
         var valued2=document.getElementById("yOfBird");
           valued2.innerText=parseFloat(e.clientY/3.7795275591).toFixed(0);
           valued2.style.position = "absolute";
           valued2.style.top = e.clientY/1.05 +'px';
         }else if(e.clientY<= "450"){
           document.getElementById("item2").src="assets/images/bird.png"
-          document.getElementById("shape2").innerText=("Y of draggable Element: "+parseFloat(e.clientY/3.7795275591).toFixed(0));
+          document.getElementById("shape2").innerText=("Y of Bird: "+parseFloat(e.clientY/3.7795275591).toFixed(0));
           var valued2=document.getElementById("yOfBird");
           valued2.innerText=parseFloat(e.clientY/3.7795275591).toFixed(0);
           valued2.style.position = "absolute";
@@ -311,7 +301,7 @@
     
     function dragEnd2(e) {
       if(moved2 = false){
-        if(e.clientY>= "380"){
+        if(e.clientY>= "390"){
           document.getElementById("item2").src="assets/images/swimmingbird.png"
           document.getElementById("yOfbird").innerText=e.clientY;
           var valued2=document.getElementById("yOfBird");
@@ -338,7 +328,7 @@
       initialX2 = currentX2;
       initialY2 = currentY2;
       active2 = false;
-      moved2 = false
+      moved2 = false;
     }
 
     
@@ -406,7 +396,7 @@
 
     function dragStart3(b) {
       if(moved3=false){
-        if(b.clientY>= "380"){
+        if(b.clientY>= "390"){
           var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
@@ -466,7 +456,7 @@
         yOffset3 = currentY3;
 
         setTranslate(currentX3, currentY3, dragItem3);
-        if(b.clientY>= "380"){
+        if(b.clientY>= "390"){
           var drag3 = document.getElementById("mark1");
         drag3.clientX = b.clientX/3.7795275591;
         drag3.style.position = "absolute";
@@ -476,7 +466,7 @@
       var x = (b.clientX/3.7795275591).toFixed(0);
       var y = (b.clientY/3.7795275591).toFixed(0);
       var coor = "X coords: " + x + ", Y coords: " + y;
-        document.getElementById("shape2").innerText=("Y of draggable Element: "+parseFloat(b.clientY/3.7795275591).toFixed(0));
+        document.getElementById("shape2").innerText=("Y of Fish: "+parseFloat(b.clientY/3.7795275591).toFixed(0));
         var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
@@ -493,13 +483,13 @@
         drag3.clientX = b.clientX/3.7795275591;
         drag3.style.position = "absolute";
         drag3.style.top = b.clientY/1.05 +'px';
-        document.getElementById("shape2").innerText=("Y of draggable Element: "+parseFloat(b.clientY/3.7795275591).toFixed(0));
+        document.getElementById("shape2").innerText=("Y of Fish: "+parseFloat(b.clientY/3.7795275591).toFixed(0));
         var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
           valued3.style.top = b.clientY/1.05 +'px';
         }else if(b.clientY<= "450"){
-          document.getElementById("shape2").innerText=("Y of draggable Element: "+parseFloat(b.clientY/3.7795275591).toFixed(0));
+          document.getElementById("shape2").innerText=("Y of Fish: "+parseFloat(b.clientY/3.7795275591).toFixed(0));
           var drag3 = document.getElementById("mark1");
         drag3.clientX = b.clientX/3.7795275591;
         drag3.style.position = "absolute";
@@ -516,7 +506,7 @@
     
     function dragEnd3(b) {
       if(moved3 = false){
-        if(b.clientY>= "380"){
+        if(b.clientY>= "390"){
           document.getElementById("item3").src="assets/images/fish.png"
           document.getElementById("yOffish").innerText=b.clientY;
           var valued3=document.getElementById("yOffish");
@@ -575,11 +565,13 @@
   if ( num2 % 2 == 0   ) {
     document.getElementById("yOfBird").style.visibility="hidden"
     document.getElementById("yOffish").style.visibility="hidden"
+    document.getElementById("yOfGirl").style.visibility="hidden"
     numli2.src = "assets/images/notselected.png";
   }
   else{
     document.getElementById("yOfBird").style.visibility="visible"
     document.getElementById("yOffish").style.visibility="visible"
+    document.getElementById("yOfGirl").style.visibility="visible"
     numli2.src = "assets/images/Selected.png";
   }
-}shape2
+}
