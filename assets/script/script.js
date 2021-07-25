@@ -32,7 +32,7 @@
 
     function dragStart(a) {
       if(moved=false){
-        if(a.clientY>= "390"){
+        if(a.clientY>= "385"){
           document.getElementById("item1").src="assets/images/swimmingGirl.png"
           document.getElementById("yOfGirl").innerText=a.clientY;
         }else if( a.clientX <= "790"){
@@ -74,7 +74,10 @@
         yOffset = currentY;
 
         setTranslate(currentX, currentY, dragItem1);
-        if(a.clientY>= "390"){
+        if(a.clientY>= "385"){
+          if(a.clientY >= "605" || a.clientX >= "1150" || a.clientX <= "410"){
+            location.reload();
+          }
           document.getElementById("item1").src="assets/images/swimmingGirl.png"
           var coor = "X coords: " + x + ", Y coords: " + y;
       var x = (a.clientX/3.7795275591).toFixed(0);
@@ -84,13 +87,16 @@
         drag.clientX = a.clientX/3.7795275591;
         drag.style.position = "absolute";
         drag.style.top = a.clientY/1.05 +'px';
-        document.getElementById("shape2").innerText=("Y of draggable Element: "+parseFloat(a.clientY/3.7795275591).toFixed(0));
+        document.getElementById("shape2").innerText=("Y of Girl: "+parseFloat(a.clientY/3.7795275591).toFixed(0));
         document.getElementById("yOfGirl").innerText=parseFloat(a.clientY/3.7795275591).toFixed(0);
         var valued=document.getElementById("yOfGirl");
           valued.innerText=parseFloat(a.clientY/3.7795275591).toFixed(0);
           valued.style.position = "absolute";
           valued.style.top = a.clientY/1.05 +'px';
         }else if( a.clientX <= "790"){
+          if(a.clientY >= "605" || a.clientX >= "1150" || a.clientX <= "410"){
+            location.reload();
+          }
           document.getElementById("yOfGirl").innerText=parseFloat(a.clientY/3.7795275591).toFixed(0);
           document.getElementById("item1").src="assets/images/flightGirl.png"
           var coor = "X coords: " + x + ", Y coords: " + y;
@@ -101,12 +107,15 @@
         drag.clientX = a.clientX/3.7795275591;
         drag.style.position = "absolute";
         drag.style.top = a.clientY/1.05 +'px';
-        document.getElementById("shape2").innerText=("Y of draggable Element: "+parseFloat(a.clientY/3.7795275591).toFixed(0));
+        document.getElementById("shape2").innerText=("Y of Girl: "+parseFloat(a.clientY/3.7795275591).toFixed(0));
         var valued=document.getElementById("yOfGirl");
           valued.innerText=parseFloat(a.clientY/3.7795275591).toFixed(0);
           valued.style.position = "absolute";
           valued.style.top = a.clientY/1.05 +'px';
         }else if(a.clientY<= "450"){
+          if(a.clientY >= "605" || a.clientX >= "1150" || a.clientX <= "410"){
+            location.reload();
+          }
           var valued=document.getElementById("yOfGirl");
           valued.innerText=parseFloat(a.clientY/3.7795275591).toFixed(0);
           valued.style.position = "absolute";
@@ -120,14 +129,14 @@
         drag.clientX = a.clientX/3.7795275591;
         drag.style.position = "absolute";
         drag.style.top = a.clientY/1.05 +'px';
-        document.getElementById("shape2").innerText=("Y of draggable Element: "+parseFloat(a.clientY/3.7795275591).toFixed(0));
+        document.getElementById("shape2").innerText=("Y of Girl: "+parseFloat(a.clientY/3.7795275591).toFixed(0));
         }
       }
     }
     
     function dragEnd(a) {
       if(moved = false){
-        if(a.clientY>= "390"){
+        if(a.clientY>= "385"){
           document.getElementById("item1").src="assets/images/swimmingGirl.png"
           document.getElementById("yOfGirl").innerText=a.clientY;
         }else if( a.clientX <= "790"){
@@ -197,7 +206,7 @@
 
     function dragStart2(e) {
       if(moved2=false){
-        if(e.clientY>= "390"){
+        if(e.clientY>= "385"){
           var valued2=document.getElementById("yOfBird");
           valued2.innerText=parseFloat(e.clientY/3.7795275591).toFixed(0);
           valued2.style.position = "absolute";
@@ -253,7 +262,10 @@
         yOffset2 = currentY2;
 
         setTranslate(currentX2, currentY2, dragItem2);
-        if(e.clientY>= "390"){
+        if(e.clientY>= "385"){
+          if(e.clientY >= "605" || e.clientX >= "1150" || e.clientX <= "410"){
+            location.reload();
+          }
           document.getElementById("item2").src="assets/images/swimmingbird.png"
           var coor = "X coords: " + x + ", Y coords: " + y;
       var x = (e.clientX/3.7795275591).toFixed(0);
@@ -269,7 +281,9 @@
           valued2.style.position = "absolute";
           valued2.style.top = e.clientY/1.05 +'px';
         }else if( e.clientX <= "790"){
-          
+          if(e.clientY >= "605" || e.clientX >= "1150" || e.clientX <= "410"){
+            location.reload();
+          }
           document.getElementById("item2").src="assets/images/bird.png"
           document.getElementById("shape2").innerText=("Y of Bird: "+parseFloat(e.clientY/3.7795275591).toFixed(0));
           var coor = "X coords: " + x + ", Y coords: " + y;
@@ -285,6 +299,9 @@
           valued2.style.position = "absolute";
           valued2.style.top = e.clientY/1.05 +'px';
         }else if(e.clientY<= "450"){
+          if(e.clientY >= "605" || e.clientX >= "1150" || e.clientX <= "410"){
+            location.reload();
+          }
           document.getElementById("item2").src="assets/images/bird.png"
           document.getElementById("shape2").innerText=("Y of Bird: "+parseFloat(e.clientY/3.7795275591).toFixed(0));
           var valued2=document.getElementById("yOfBird");
@@ -301,7 +318,7 @@
     
     function dragEnd2(e) {
       if(moved2 = false){
-        if(e.clientY>= "390"){
+        if(e.clientY>= "385"){
           document.getElementById("item2").src="assets/images/swimmingbird.png"
           document.getElementById("yOfbird").innerText=e.clientY;
           var valued2=document.getElementById("yOfBird");
@@ -396,31 +413,31 @@
 
     function dragStart3(b) {
       if(moved3=false){
-        if(b.clientY>= "390"){
+        if(b.clientY>= "385"){
           var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
-          valued3.style.top = b.clientY/1.05 +'px';
+          valued3.style.top = b.clientY/1.03 +'px';
           document.getElementById("item3").src="assets/images/fish.png"
           document.getElementById("yOffish").innerText=b.clientY;
         }else if( b.clientX <= "790"){
           var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
-          valued3.style.top = b.clientY/1.05 +'px';
+          valued3.style.top = b.clientY/1.03 +'px';
           document.getElementById("item3").src="assets/images/flightfish.png"
 
         }else if(b.clientY<= "450"){
           var drag3 = document.getElementById("mark1");
         drag3.clientX = b.clientX/3.7795275591;
         drag3.style.position = "absolute";
-        drag3.style.top = b.clientY/1.05 +'px';
+        drag3.style.top = b.clientY/1.03 +'px';
           document.getElementById("item3").src="assets/images/flightfish.png"
 
           var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
-          valued3.style.top = b.clientY/1.05 +'px';
+          valued3.style.top = b.clientY/1.03 +'px';
         }
       }
       if (b.type === "touchstart") {
@@ -429,6 +446,7 @@
       } else {
         initialX3 = b.clientX - xOffset3;
         initialY3 = b.clientY - yOffset3;
+        
       }
 
       if (b.target === dragItem3) {
@@ -439,7 +457,8 @@
     }
     
     function drag3(b) {
-
+      console.log("Y:" + b.clientY)
+      console.log("X:" + b.clientX)
       if (active3) {
       
         b.preventDefault();
@@ -456,11 +475,14 @@
         yOffset3 = currentY3;
 
         setTranslate(currentX3, currentY3, dragItem3);
-        if(b.clientY>= "390"){
+        if(b.clientY>= "385"){
+          if(b.clientY >= "605" || b.clientX >= "1150" || b.clientX <= "410"){
+            location.reload();
+          }
           var drag3 = document.getElementById("mark1");
         drag3.clientX = b.clientX/3.7795275591;
         drag3.style.position = "absolute";
-        drag3.style.top = b.clientY/1.05 +'px';
+        drag3.style.top = b.clientY/1.03 +'px';
           document.getElementById("item3").src="assets/images/fish.png"
           var coor = "X coords: " + x + ", Y coords: " + y;
       var x = (b.clientX/3.7795275591).toFixed(0);
@@ -470,9 +492,11 @@
         var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
-          valued3.style.top = b.clientY/1.05 +'px';
+          valued3.style.top = b.clientY/1.03 +'px';
         }else if( b.clientX <= "790"){
-  
+          if(b.clientY >= "605" || b.clientX >= "1150" || b.clientX <= "410"){
+            location.reload();
+          }
           document.getElementById("item3").src="assets/images/flightfish.png"
 
           var coor = "X coords: " + x + ", Y coords: " + y;
@@ -482,37 +506,41 @@
       var drag3 = document.getElementById("mark1");
         drag3.clientX = b.clientX/3.7795275591;
         drag3.style.position = "absolute";
-        drag3.style.top = b.clientY/1.05 +'px';
+        drag3.style.top = b.clientY/1.03 +'px';
         document.getElementById("shape2").innerText=("Y of Fish: "+parseFloat(b.clientY/3.7795275591).toFixed(0));
         var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
-          valued3.style.top = b.clientY/1.05 +'px';
+          valued3.style.top = b.clientY/1.03 +'px';
         }else if(b.clientY<= "450"){
+          if(b.clientY >= "605" || b.clientX >= "1150" || b.clientX <= "410"){
+            location.reload();
+          }
           document.getElementById("shape2").innerText=("Y of Fish: "+parseFloat(b.clientY/3.7795275591).toFixed(0));
           var drag3 = document.getElementById("mark1");
         drag3.clientX = b.clientX/3.7795275591;
         drag3.style.position = "absolute";
-        drag3.style.top = b.clientY/1.05 +'px';
+        drag3.style.top = b.clientY/1.03 +'px';
           document.getElementById("item3").src="assets/images/flightfish.png"
 
           var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
-          valued3.style.top = b.clientY/1.05 +'px';
+          valued3.style.top = b.clientY/1.03 +'px';
         }
+        
       }
     }
     
     function dragEnd3(b) {
       if(moved3 = false){
-        if(b.clientY>= "390"){
+        if(b.clientY>= "385"){
           document.getElementById("item3").src="assets/images/fish.png"
           document.getElementById("yOffish").innerText=b.clientY;
           var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
-          valued3.style.top = b.clientY/1.05 +'px';
+          valued3.style.top = b.clientY/1.03 +'px';
         }else if( b.clientX <= "790"){
           document.getElementById("item3").src="assets/images/flightfish.png"
           document.getElementById("yOffish").innerText=b.clientY;
@@ -520,18 +548,18 @@
           var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
-          valued3.style.top = b.clientY/1.05 +'px';
+          valued3.style.top = b.clientY/1.03 +'px';
         }else if(b.clientY<= "450"){
           var drag3 = document.getElementById("mark1");
         drag3.clientX = b.clientX/3.7795275591;
         drag3.style.position = "absolute";
-        drag3.style.top = b.clientY/1.05 +'px';
+        drag3.style.top = b.clientY/1.03 +'px';
           document.getElementById("item3").src="assets/images/flightfish.png"
 
           var valued3=document.getElementById("yOffish");
           valued3.innerText=parseFloat(b.clientY/3.7795275591).toFixed(0);
           valued3.style.position = "absolute";
-          valued3.style.top = b.clientY/1.05 +'px';
+          valued3.style.top = b.clientY/1.03 +'px';
         }
       }
       initialX3 = currentX3;

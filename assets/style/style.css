@@ -29,7 +29,7 @@ body{
 }
 #container{
     width: 743px !important;
-    height: 572px !important;
+    height: 524px !important;
     background-image: url("https://i.pinimg.com/originals/70/a4/16/70a41689bde6cff2c8ce3e98e8780181.png");
     background-size: cover;
     background-color: #333;
@@ -49,7 +49,7 @@ body{
 #dataOfLocation{
     border: black solid 2px;
     border-radius: 10px;
-    margin: 3px 0px 3px 0px;
+    margin: 3px 0px 17px 0px;
     padding: 3px  0 3px 7px;
     background-color: white;
     width: 743px !important;
@@ -74,7 +74,7 @@ body{
     width: 65px;
     position: absolute;
     left: 222px;
-    top: 268px;
+    top: 320px;
   }
   #mark3{
     display: block;
@@ -88,7 +88,7 @@ body{
     width: 65px;
     position: absolute;
     left: 222px;
-    top: 605px; 
+    top: 475px; 
   }
 #demo{
     display: none;
@@ -139,7 +139,34 @@ body{
 #item3{
     position: absolute;
     bottom: 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+#item2{
+    cursor: pointer;
+    display: inline-block;
+}
+#item1{
+    cursor: pointer;
+    display: inline-block;
 }
 #shape2{
     text-align: left;
+}
+#birdyin{
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+}
+#fishyin{
+    display: inline-block;
+    position: relative;
+    top: 80px;
+    left: 65px;
+}
+#girlyin{
+    display: inline-block;
+    position: relative;
+    top: 90px;
+    left: 20px;
 }
