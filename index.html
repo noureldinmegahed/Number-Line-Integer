@@ -1,56 +1,28 @@
-<!DOCTYPE html>
 <html>
 <head>
     <!-- <link rel="shortcut icon" href="assets/images/brainlogoweb.png"/> -->
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/styleLoadingPage.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#eeecda">
 </head>
-<body>
-    <title>Number Line Integers</title>
-        <div id="part1">
-            <img title="Number Line Integers" id="numberLineIntegersimg" src="assets/images/numberLineIntegers2.png">
-            <div>
-                <img title="Location of Bird" id="mark3" src="assets/images/mark3.png">
-                <p id="yOfBird"></p>
+    <body>
+        <nav id="navbar">
+            <div id="part1">
+                <img id="logo" src="assets/images/logo.png">
             </div>
-            <div>
-                <img title="Location of Fish" id="mark1" src="assets/images/mark1.png">
-                <p id="yOffish"></p>
+            <div id="part2">
+                <button style="display: none;" id="menuButton"><img id="menuButtonImg" src="assets/images/menu.png"></button>
             </div>
-             <div>
-                <img title="Location of Girl" id="mark2" src="assets/images/mark2.png">
-                <p id="yOfGirl"></p>
-            </div>
-            </div>
-        </div>
-        </div>
-        <div id="part2">
-            <div id="dataOfLocation">
-                <p class="shapes" id="shape2">Y of draggable Element:</p>
-            </div>
-            <!-- <div id="outerContainer"> -->
-                <div id="container">
-                    <div>
-                    <img title="Drag Me" draggable="true" id="item2" src="assets/images/bird.png">
-                </div>
-                <!-- <p class="yin" id="birdyin">y of bird</p> -->
-                <div>
-                    <img title="Drag Me" draggable="true" id="item3" src="assets/images/fish.png">
-                    <!-- <p class="yin" id="girlyin">y of girl</p> -->
-                </div>
-                <div>
-                    <img title="Drag Me" draggable="true" id="item1" src="assets/images/flightGirl.png">
-                    <!-- <p class="yin" id="fishyin">y of fish</p> -->
-                </div>
+        </nav>
+        <div id="advice">
+            <img src="assets/images/swimmingGirlLoading.png">
+            <p>Discover this activity and learn</p>
+            <p>Just <span style="color: red;">move</span> the characters</p>
+            <a href="NumberLineInteger.html">
+                <button id="discover">Discover</button>        
+            </a>
                 <p></p>
-                 </div>
-    </div>
-    <div id="part3">
-        <button onclick="hidenuml1()" class="numline"><img id="numline1" class="numlines" src="assets/images/Selected.png"><p id="numlines2">Number Line</p></button>
-        <button onclick="hidenuml2()" class="numline"><img id="numline2" class="numlines" src="assets/images/Selected.png"><p id="numlines2">Lables</p></button>
-    </div>
-    <script src="assets/script/script.js"></script>
-</body>
+        </div>
+    </body>
 </html>

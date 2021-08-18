@@ -1,0 +1,58 @@
+@font-face{
+    font-family: 'SFR';
+    src: url("../fonts/SFR.ttf")
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'SFR';
+}
+body{
+    background-color: #fef7e9;
+    height: 100%;
+    text-align: center;
+}
+#logo{
+    width: 170px;
+    height: 100%;
+}
+#navbar{
+    height: 20%;
+    padding: 10px;
+}
+#part1{
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+#part2{
+    width: 49%;
+    display: inline-block;
+    text-align: right;
+}
+#menuButtonImg{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    position: relative;
+    top: -84px;
+}
+#menuButton{
+    background-color: transparent;
+}
+#advice{
+    text-align: center;
+    border: black solid 1px;
+    margin: 0 30% 0 30%;
+    border-radius: 5px;
+    background-color: white;
+    height: 200px;
+}
+#discover{
+    text-decoration: none;
+    border: black solid 1px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
