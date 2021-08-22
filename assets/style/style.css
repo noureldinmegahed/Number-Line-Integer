@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "SF";
+  font-family: "San Fransisco";
   src: url("../fonts/SF.ttf");
 }
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "SF";
+  font-family: "San Fransisco";
 }
 body {
   background-color: #fef7e9;
@@ -135,6 +135,14 @@ body {
   bottom: 10px;
 }
 #numlines2,
+#numlines {
+  display: inline-block;
+}
+#numlines3 {
+  position: relative;
+  bottom: 10px;
+}
+#numlines3,
 #numlines {
   display: inline-block;
 }

@@ -671,3 +671,14 @@ function hidenuml2() {
     numli2.src = "assets/images/Selected.png";
   }
 }
+function hidenuml3() {
+  num3 = num3 + 1;
+  var numli3 = document.getElementById("numline3");
+  if (num3 % 2 == 0) {
+    document.getElementById("nomo").style.visibility = "hidden";
+    numli3.src = "assets/images/notselected.png";
+  } else {
+    document.getElementById("nomo").style.visibility = "visible";
+    numli3.src = "assets/images/Selected.png";
+  }
+}

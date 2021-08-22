@@ -1,12 +1,12 @@
 @font-face{
-    font-family: 'SFR';
-    src: url("../fonts/SFR.ttf")
+    font-family: 'San Fransisco';
+    src: url("../fonts/SF.ttf")
 }
 *{
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'SFR';
+    font-family: 'San Fransisco';
 }
 body{
     background-color: #fef7e9;
