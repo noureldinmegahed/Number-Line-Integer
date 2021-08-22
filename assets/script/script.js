@@ -238,42 +238,17 @@ function drag(a) {
   //   }
   //   }
   const objects = [girlY, birdY, fishY];
-  document.getElementById("txt1").innerHTML = objects;
 
   function myFunction() {
-    console.log("1");
+
+    var num = objects;
+    var n = num.toString();
     objects.sort();
-    console.log("2");
-    document.getElementById("txt1").innerHTML = objects;
-    console.log("3");
-    if (girlY) {
-      console.log("4");
-      var res = objects;
-      console.log("5");
-      var str = res;
-      console.log("6");
-      var n = str.indexOf(",");
-      console.log("7");
-      var place = n;
-      console.log("8");
-      var numb1 = str.substring(0, place);
-      console.log("9");
-      var numb2 = str.substring(place + 1, n);
-      console.log("10");
-      var numb3 = str.substring(place + 1, str.legnth);
-      console.log("11");
-      var namevar1 = Number(numb1);
-      console.log("12");
-      var namevar2 = Number(numb2);
-      console.log("13");
-      var namevar3 = Number(numb3);
-      console.log("14");
-      var oxox = namevar1 + "<" + namevar2 + "<" + namevar3;
-      console.log("15");
-      document.getElementById("txt1").innerText = oxox;
-      console.log("16");
-      console.log(oxox);
-    }
+    var number1 =objects[0].toString();
+    var number2 =objects[1].toString();
+    var number3 =objects[2].toString();
+    var arra =  number1 +"<"+number2+"<"+number3
+    document.getElementById("txt1").innerHTML = arra;
   }
   myFunction();
 }
