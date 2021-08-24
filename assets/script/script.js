@@ -79,34 +79,10 @@ function drag(a) {
 
     setTranslate(currentX, currentY, dragItem1);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     if (a.clientY >= "385") {
-      
-      
       if (a.clientY >= "605" || a.clientX >= "1150" || a.clientX <= "410") {
         location.reload();
       }
-
-
       document.getElementById("item1").src = "assets/images/swimmingGirl.png";
       var coor = "X coords: " + x + ", Y coords: " + y;
       var x = (a.clientX / 3.7795275591).toFixed(0);
@@ -117,9 +93,7 @@ function drag(a) {
       drag.style.position = "absolute";
       drag.style.top = a.clientY / 1.05 + "px";
       document.getElementById("shape2").innerText = "Y of Girl: " + parseFloat(a.clientY / 3.7795275591).toFixed(0);
-      document.getElementById("yOfGirl").innerText = parseFloat(
-        a.clientY / 3.7795275591
-      ).toFixed(0);
+      document.getElementById("yOfGirl").innerText = parseFloat(a.clientY / 3.7795275591).toFixed(0);
       var valued = document.getElementById("yOfGirl");
       valued.innerText = parseFloat(a.clientY / 3.7795275591).toFixed(0);
       valued.style.position = "absolute";
@@ -131,39 +105,7 @@ function drag(a) {
       document.getElementById("weg").innerText = girlY;
       document.getElementById("wef").innerText = fishY;
       document.getElementById("web").innerText = birdY;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    else if (a.clientX <= "790") {
+    } else if (a.clientX <= "790") {
       if (a.clientY >= "605" || a.clientX >= "1150" || a.clientX <= "410") {
         location.reload();
       }
@@ -237,18 +179,24 @@ function drag(a) {
   //    }
   //   }
   //   }
-  const objects = [girlY, birdY, fishY];
+  var gg = Number(girlY);
+  var ff = Number(fishY);
+  var bb = Number(birdY);
+  const objects = [gg, bb, ff];
 
   function myFunction() {
-
     var num = objects;
     var n = num.toString();
-    objects.sort();
-    var number1 =objects[0].toString();
-    var number2 =objects[1].toString();
-    var number3 =objects[2].toString();
-    var arra =  number1 +"<"+number2+"<"+number3
-    document.getElementById("txt1").innerHTML = arra;
+    objects.sort(function(a, b){return b - a});
+    console.log(objects)
+    var number1 = objects[0];
+    var number2 = objects[1];
+    var number3 = objects[2];
+    var arra = number1 + "<" + number2 + "<" + number3;
+    document.getElementById("txt1").innerHTML = number1;
+    document.getElementById("txt3").innerHTML = number2;
+    document.getElementById("txt5").innerHTML = number3;
+
   }
   myFunction();
 }
@@ -351,6 +299,13 @@ function drag2(e) {
 
     setTranslate(currentX2, currentY2, dragItem2);
     if (e.clientY >= "385") {
+      var birdYloc = parseFloat(e.clientY / 3.7795275591).toFixed(0);
+      var birdXloc = parseFloat(e.clientX / 3.7795275591).toFixed(0);
+      birdY = birdYloc;
+      birdX = birdXloc;
+      document.getElementById("weg").innerText = girlY;
+      document.getElementById("wef").innerText = fishY;
+      document.getElementById("web").innerText = birdY;
       if (e.clientY >= "605" || e.clientX >= "1150" || e.clientX <= "410") {
         location.reload();
       }
@@ -374,6 +329,13 @@ function drag2(e) {
       birdY = birdYloc;
       birdX = birdXloc;
     } else if (e.clientX <= "790") {
+      var birdYloc = parseFloat(e.clientY / 3.7795275591).toFixed(0);
+      var birdXloc = parseFloat(e.clientX / 3.7795275591).toFixed(0);
+      birdY = birdYloc;
+      birdX = birdXloc;
+      document.getElementById("weg").innerText = girlY;
+      document.getElementById("wef").innerText = fishY;
+      document.getElementById("web").innerText = birdY;
       if (e.clientY >= "605" || e.clientX >= "1150" || e.clientX <= "410") {
         location.reload();
       }
@@ -397,6 +359,13 @@ function drag2(e) {
       birdY = birdYloc;
       birdX = birdXloc;
     } else if (e.clientY <= "450") {
+      var birdYloc = parseFloat(e.clientY / 3.7795275591).toFixed(0);
+      var birdXloc = parseFloat(e.clientX / 3.7795275591).toFixed(0);
+      birdY = birdYloc;
+      birdX = birdXloc;
+      document.getElementById("weg").innerText = girlY;
+      document.getElementById("wef").innerText = fishY;
+      document.getElementById("web").innerText = birdY;
       if (e.clientY >= "605" || e.clientX >= "1150" || e.clientX <= "410") {
         location.reload();
       }
@@ -534,6 +503,13 @@ function drag3(b) {
 
     setTranslate(currentX3, currentY3, dragItem3);
     if (b.clientY >= "385") {
+      var fishYloc = parseFloat(b.clientY / 3.7795275591).toFixed(0);
+      var fishXloc = parseFloat(b.clientX / 3.7795275591).toFixed(0);
+      fishY = fishYloc;
+      fishX = fishXloc;
+      document.getElementById("weg").innerText = girlY;
+      document.getElementById("wef").innerText = fishY;
+      document.getElementById("web").innerText = birdY;
       if (b.clientY >= "605" || b.clientX >= "1150" || b.clientX <= "410") {
         location.reload();
       }
@@ -557,6 +533,13 @@ function drag3(b) {
       fishY = fishYloc;
       fishX = fishXloc;
     } else if (b.clientX <= "790") {
+      var fishYloc = parseFloat(b.clientY / 3.7795275591).toFixed(0);
+      var fishXloc = parseFloat(b.clientX / 3.7795275591).toFixed(0);
+      fishY = fishYloc;
+      fishX = fishXloc;
+      document.getElementById("weg").innerText = girlY;
+      document.getElementById("wef").innerText = fishY;
+      document.getElementById("web").innerText = birdY;
       if (b.clientY >= "605" || b.clientX >= "1150" || b.clientX <= "410") {
         location.reload();
       }
@@ -581,6 +564,13 @@ function drag3(b) {
       fishY = fishYloc;
       fishX = fishXloc;
     } else if (b.clientY <= "450") {
+      var fishYloc = parseFloat(b.clientY / 3.7795275591).toFixed(0);
+      var fishXloc = parseFloat(b.clientX / 3.7795275591).toFixed(0);
+      fishY = fishYloc;
+      fishX = fishXloc;
+      document.getElementById("weg").innerText = girlY;
+      document.getElementById("wef").innerText = fishY;
+      document.getElementById("web").innerText = birdY;
       if (b.clientY >= "605" || b.clientX >= "1150" || b.clientX <= "410") {
         location.reload();
       }
