@@ -160,7 +160,6 @@ function drag(a) {
     objects.sort(function (a, b) {
       return b - a;
     });
-    console.log(objects);
     var number1 = objects[0];
     var number2 = objects[1];
     var number3 = objects[2];
