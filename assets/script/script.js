@@ -1,14 +1,3 @@
-//  const showCoords = (event) => {
-//  var x = event.clientX;
-//  var y = event.clientY;
-//  var coor = "X coords: " + x + ", Y coords: " + y;
-//  document.getElementById("demo").innerText=coor;
-//  alert(coor);
-//  }
-// const dragendfun = (event) => {
-//     var x = (event.clientX/37.7952755906).toFixed(0);
-//     var y = (event.clientY/37.7952755906).toFixed(0);
-// }
 var num1 = 1;
 var num2 = 1;
 var num3 = 1;
@@ -29,9 +18,6 @@ var initialY;
 var xOffset = 0;
 var yOffset = 0;
 var moved = false;
-// container.addEventListener("touchstart", dragStart, false);
-// container.addEventListener("touchend", dragEnd, false);
-// container.addEventListener("touchmove", drag, false);
 container.addEventListener("mousedown", dragStart, false);
 container.addEventListener("mouseup", dragEnd, false);
 container.addEventListener("mousemove", drag, false);
@@ -58,8 +44,6 @@ function dragStart(a) {
   if (a.target === dragItem1) {
     active = true;
   }
-  // // console.log("initialX"+ initialX);
-  // // console.log("initialY"+ initialY);
 }
 
 function drag(a) {
@@ -162,23 +146,6 @@ function drag(a) {
       document.getElementById("web").innerText = birdY;
     }
   }
-  // function vs(){
-  //   if(girlY){
-  //    if(girlY < birdY) {
-  //      document.getElementById("txt1").innerText=girlY;
-  //      document.getElementById("txt2").innerText=birdY;
-  //     //  console.log("girl smallsssolasacascسسسiscl !")
-  //    }else if(girlY < birdY || girlY < fishY) {
-  //     document.getElementById("txt2").innerText=girlY;
-  //     document.getElementById("txt1").innerText=birdY;
-  //     // console.log("girl smallsssolasacasc !")
-  //   }if(girlY > birdY && girlY > fishY){
-  //      document.getElementById("txt3").innerText=girlY;
-  //      document.getElementById("txt1").innerText=birdY;
-  //     //  console.log("ssss ssss أنا الثعبان")
-  //    }
-  //   }
-  //   }
   var gg = Number(girlY);
   var ff = Number(fishY);
   var bb = Number(birdY);
@@ -196,9 +163,18 @@ function drag(a) {
     document.getElementById("txt1").innerHTML = number1;
     document.getElementById("txt3").innerHTML = number2;
     document.getElementById("txt5").innerHTML = number3;
-
+    if(girlY ==	undefined){
+      girlY=86;
+    }
+    if(birdY ==	undefined){
+      birdY=49;
+    }
+    if(fishY ==	undefined){
+      fishY=141;
+    }
   }
   myFunction();
+  
 }
 
 function dragEnd(a) {
@@ -222,7 +198,6 @@ function dragEnd(a) {
 
 function setTranslate(xPos, yPos, el) {
   el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
-  // // console.log(xPos + "px " + yPos + " px")
 }
 
 var dragItem2 = document.querySelector("#item2");
@@ -236,9 +211,6 @@ var initialY2;
 var xOffset2 = 0;
 var yOffset2 = 0;
 var moved2 = false;
-// container.addEventListener("touchstart", dragStart, false);
-// container.addEventListener("touchend", dragEnd, false);
-// container.addEventListener("touchmove", drag, false);
 container.addEventListener("mousedown", dragStart2, false);
 container.addEventListener("mouseup", dragEnd2, false);
 container.addEventListener("mousemove", drag2, false);
@@ -278,8 +250,6 @@ function dragStart2(e) {
   if (e.target === dragItem2) {
     active2 = true;
   }
-  // // console.log("initialX2"+ initialX2);
-  // // console.log("initialY2"+ initialY2);
 }
 
 function drag2(e) {
@@ -422,7 +392,6 @@ function dragEnd2(e) {
 
 function setTranslate2(xPos2, yPos2, el2) {
   el2.style.transform = "translate3d(" + xPos2 + "px, " + yPos2 + "px, 0)";
-  // // console.log(xPos + "px " + yPos + " px")
 }
 
 var dragItem3 = document.querySelector("#item3");
@@ -436,9 +405,6 @@ var initialY3;
 var xOffset3 = 0;
 var yOffset3 = 0;
 var moved3 = false;
-// container.addEventListener("touchstart", dragStart, false);
-// container.addEventListener("touchend", dragEnd, false);
-// container.addEventListener("touchmove", drag, false);
 container.addEventListener("mousedown", dragStart3, false);
 container.addEventListener("mouseup", dragEnd3, false);
 container.addEventListener("mousemove", drag3, false);
@@ -482,8 +448,6 @@ function dragStart3(b) {
   if (b.target === dragItem3) {
     active3 = true;
   }
-  // // console.log("initialX3"+ initialX3);
-  // // console.log("initialY3"+ initialY3);
 }
 
 function drag3(b) {
@@ -632,7 +596,6 @@ function dragEnd3(b) {
 
 function setTranslate3(xPos3, yPos3, el3) {
   el3.style.transform = "translate3d(" + xPos3 + "px, " + yPos3 + "px, 0)";
-  // // console.log(xPos + "px " + yPos + " px")
 }
 
 function hidenuml1() {
