@@ -76,8 +76,11 @@ function drag(a) {
       drag.clientX = a.clientX / 3.7795275591;
       drag.style.position = "absolute";
       drag.style.top = a.clientY / 1.05 + "px";
-      document.getElementById("shape2").innerText = "Y of Girl: " + parseFloat(a.clientY / 3.7795275591).toFixed(0);
-      document.getElementById("yOfGirl").innerText = parseFloat(a.clientY / 3.7795275591).toFixed(0);
+      document.getElementById("shape2").innerText =
+        "Y of Girl: " + parseFloat(a.clientY / 3.7795275591).toFixed(0);
+      document.getElementById("yOfGirl").innerText = parseFloat(
+        a.clientY / 3.7795275591
+      ).toFixed(0);
       var valued = document.getElementById("yOfGirl");
       valued.innerText = parseFloat(a.clientY / 3.7795275591).toFixed(0);
       valued.style.position = "absolute";
@@ -154,8 +157,10 @@ function drag(a) {
   function myFunction() {
     var num = objects;
     var n = num.toString();
-    objects.sort(function(a, b){return b - a});
-    console.log(objects)
+    objects.sort(function (a, b) {
+      return b - a;
+    });
+    console.log(objects);
     var number1 = objects[0];
     var number2 = objects[1];
     var number3 = objects[2];
@@ -163,18 +168,17 @@ function drag(a) {
     document.getElementById("txt1").innerHTML = number1;
     document.getElementById("txt3").innerHTML = number2;
     document.getElementById("txt5").innerHTML = number3;
-    if(girlY ==	undefined){
-      girlY=86;
+    if (girlY == undefined) {
+      girlY = 86;
     }
-    if(birdY ==	undefined){
-      birdY=49;
+    if (birdY == undefined) {
+      birdY = 49;
     }
-    if(fishY ==	undefined){
-      fishY=141;
+    if (fishY == undefined) {
+      fishY = 141;
     }
   }
   myFunction();
-  
 }
 
 function dragEnd(a) {
